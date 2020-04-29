@@ -38,7 +38,6 @@ export const fetchUsers = () => {
     return dispatch => {
         axios.get('https://jsonplaceholder.typicode.com/users')
         .then(response => {
-            console.log(response, response.data);
             dispatch(addUsers(response.data))
         })
         .catch(error => {
@@ -80,7 +79,6 @@ export const sendEditUser = (userData) => {
     return dispatch => {
         axios.patch(`https://jsonplaceholder.typicode.com/users/${id}`, userData.data)
         .then(res => {
-            console.log('edit response', res);
           dispatch(editUser({res, id}));
         })
         .catch(err => {

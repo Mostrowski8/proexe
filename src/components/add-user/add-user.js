@@ -5,7 +5,6 @@ import './add-user.css';
 const AddUser = (props) => {
   const { register, handleSubmit, errors } = useForm();
   const onSubmit = data => {
-    console.log(data, props, props.postuser)
     if (!props.editing) {
       props.postUser(data);
       props.closeAdd();

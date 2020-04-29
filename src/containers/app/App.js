@@ -16,14 +16,12 @@ class App extends Component {
   }
 
   componentDidMount() {
-    console.log('fetching users');
     if (this.props.users.length === 0) {
       this.props.fetchUsers();
     }
   }
 
   openAdd = (id) => {
-    console.log('openAdd', id)
     this.setState({addUserVisible: true, editing: id})
   }
 
@@ -32,7 +30,6 @@ class App extends Component {
   }
 
   openDelete = (id) => {
-    console.log('deleting', id)
     this.setState({deleteUserVisible: true, deleting: id})
   }
 
