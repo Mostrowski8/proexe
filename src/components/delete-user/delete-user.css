@@ -1,0 +1,28 @@
+.delete-popup {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.delete-container {
+    position: absolute;
+    height: 300px;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+
+.popup-btn-container {
+    margin-top: 184px;
+    text-align: right;
+}
+
+.popup-btn-container .btn {
+    margin-left: 10px;
+}
