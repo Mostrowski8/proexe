@@ -20,7 +20,19 @@ const users = props.users.map(user => {
 
     return (
         <div className="card table-container ">
-        <div className="add-user-panel"><div><h4>User List</h4></div><div><button type="button" className="btn btn-primary add-btn" onClick={() => props.openAdd()}>Add New</button></div></div>
+        <div className="add-user-panel">
+            <div>
+                <h4>User List</h4>
+            </div>
+            <div>
+                <button 
+                type="button" 
+                className="btn btn-primary add-btn" 
+                onClick={() => props.openAdd()}>
+                    Add New
+                </button>
+            </div>
+        </div>
         <table className="table">
             <thead className="thead-light">
                 <tr>

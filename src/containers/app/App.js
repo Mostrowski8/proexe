@@ -42,8 +42,16 @@ class App extends Component {
       <div className="App">
         <h1>Dashboard</h1>
         {!this.state.addUserVisible ?
-         <UsersTable users={this.props.users} openAdd={this.openAdd} openDelete={this.openDelete} /> :
-         <AddUser editUser={this.props.editUser} users={this.props.users} editing={this.state.editing} postUser={this.props.postUser} closeAdd={this.closeAdd} />
+         <UsersTable 
+         users={this.props.users} 
+         openAdd={this.openAdd} 
+         openDelete={this.openDelete} /> :
+         <AddUser 
+         editUser={this.props.editUser} 
+         users={this.props.users} 
+         editing={this.state.editing} 
+         postUser={this.props.postUser} 
+         closeAdd={this.closeAdd} />
         } 
         { this.state.deleteUserVisible && 
           <DeleteUser 

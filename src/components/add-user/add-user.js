@@ -41,19 +41,33 @@ const AddUser = (props) => {
       <div><div><h4>Form</h4></div>
         <form onSubmit={handleSubmit(onSubmit)}>
         <div className="form-group row">
-        <label className="col-sm-4 col-form-label text-center">Name</label>
-        <div className="col-sm-8">
-          <input className="form-control" defaultValue={currentUser? currentUser.name : ''} type="text" placeholder="name" name="name" ref={register({required: true})} />
+          <label className="col-sm-4 col-form-label text-center">Name</label>
+          <div className="col-sm-8">
+            <input 
+            className="form-control" 
+            defaultValue={currentUser? currentUser.name : ''} 
+            type="text" 
+            placeholder="name" 
+            name="name" 
+            ref={register({required: true})} />
           </div>
         </div>
         <div className="form-group row">
-        <label className="col-sm-4 col-form-label text-center">Email</label>
-        <div className="col-sm-8">
-          <input className="form-control" defaultValue={currentUser? currentUser.email : ''} type="email" placeholder="email" name="email" ref={register({required: true})} />
-        </div>
+          <label className="col-sm-4 col-form-label text-center">Email</label>
+          <div className="col-sm-8">
+            <input 
+            className="form-control" 
+            defaultValue={currentUser? currentUser.email : ''} 
+            type="email" 
+            placeholder="email" 
+            name="email" 
+            ref={register({required: true})} />
+          </div>
         </div> 
         <div className="btn-container">
-          <button className="btn btn-outline-danger cancel-btn" onClick={props.closeAdd}>Cancel</button><input className="btn btn-success" value="Submit" type="submit" />
+          <button 
+          className="btn btn-outline-danger cancel-btn" onClick={props.closeAdd}>Cancel</button>
+          <input className="btn btn-success" value="Submit" type="submit" />
         </div>
         </form>
       </div>

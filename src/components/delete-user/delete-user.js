@@ -10,7 +10,11 @@ const DeleteUser = (props) => {
                 </div>
                 <div className="popup-btn-container">
                     <button className="btn btn-dark" onClick={props.closeDelete}>Cancel</button>
-                    <button className="btn btn-danger" onClick={() => {props.deletetUser(props.deleting); props.closeDelete()}}>Delete</button>
+                    <button 
+                    className="btn btn-danger" 
+                    onClick={() => {props.deletetUser(props.deleting); props.closeDelete()}}>
+                        Delete
+                    </button>
                 </div>
             </div>
         </div>
